@@ -1,0 +1,674 @@
+*{
+  margin: 0;
+  padding: 0;
+}/* Estilo geral do corpo */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+}
+
+/* Barra de navegação */
+nav {
+  background-color: #0b0118;
+}
+
+/* Lista principal */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Itens do menu */
+nav ul li {
+  position: relative;
+}
+
+/* Links */
+nav ul li a {
+  display: block;
+  color: white;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+/* Submenu (dropdown) */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #0b0118;
+  min-width: 150px;
+  flex-direction: column;
+}
+
+/* Mostrar submenu ao passar o mouse */
+nav ul li:hover ul {
+  display: flex;
+}
+
+/* Estilo dos links do submenu */
+nav ul li ul li a {
+  padding: 10px 15px;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 20px;
+}
+
+.fp{
+  width: 60px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: -1px;
+  padding: auto;
+}
+
+.fg{
+  width: 40px;
+  height: 30px;
+  margin-left: 13px;
+  margin-top: 8px;
+  padding: auto;
+}
+
+header{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: #02012b;
+  color: #f4f4f4;
+}
+
+.BD{
+  width: 20px;
+  height: auto;
+  margin-left: 10px;
+  margin-top: -1px;
+  padding: auto;
+}
+.cont{
+   font-size: 20px;
+  background-color: #000002;
+  color: #f4f4f4;
+  width: 60%;
+  margin-left:20%;
+}
+.sp{
+   width: 800px;
+  height: auto;
+  margin-left: 80px;
+  margin-top: -1px;
+  padding: auto;
+}
+
+.tv{
+   width: 80px;
+  height: auto;
+  margin-left: 1030px;
+  margin-top: -10px;
+  padding: auto;
+  border-radius: 10px;  
+}
+.fgt{
+  width: 60%;
+  margin-left: 20%;
+  padding: 10px;
+  background-color: #000000;
+  margin-top: 70PX;
+ 
+}
+.GA{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c7c7f7; 
+  border: 2px solid #000;   
+  border-radius: 6px;     
+  padding: 12px 20px;
+  width: 200px;            
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.GB{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c7c7f7; 
+  border: 2px solid #000;   
+  border-radius: 6px;     
+  padding: 12px 20px;
+  width: 200px;            
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.GC{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c7c7f7; 
+  border: 2px solid #000;   
+  border-radius: 6px;     
+  padding: 12px 20px;
+  width: 300px;            
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.GD{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c7c7f7; 
+  border: 2px solid #000;   
+  border-radius: 6px;     
+  padding: 12px 20px;
+  width: 300px;            
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  transition: 0.2s ease;
+}
+
+.MOTOR{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #f4f4f4;
+   width: 60%;
+   margin-top: 80PX;
+  margin-left:20%;
+}
+.carrossel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.carrossel {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.card {
+  min-width: 200px;
+  height: 300px;
+  border-radius: 12px;
+  margin: 0 10px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+  border-radius: 12px;
+}
+
+.card span {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(255,255,255,0.3);
+}
+
+.btn.prev {
+  left: 20px;
+}
+
+.btn.next {
+  right: 20px;
+}
+
+span{
+  color: aliceblue;
+}
+
+.linhas {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+.linha {
+  width: 1020px;
+  height: 4px;
+  background-color: red;
+  margin-top: 5px; /* distância entre as duas linhas */
+  border-radius: 4px;
+}
+
+.pilo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  margin-top: 50px;
+  width: 60%;
+  margin-left:20%;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.tab.active {
+  background: red;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* --- Conteúdo das abas --- */
+.tab-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.tab-content.active {
+  display: block;
+  opacity: 1;
+}
+
+/* --- Tabela Teams escondida --- */
+.hidden {
+  display: none;
+}
+
+/* --- Botão "Show all" --- */
+.show-table {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#toggleTable {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#toggleTable:hover {
+  background-color: #a00000;
+}
+
+.top3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* === CARD BASE === */
+.driver-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+/* === FUNDO LARANJA DO OSCAR === */
+.oscar {
+  background: linear-gradient(90deg, #e96209, #f87f1f);
+}
+
+/* === OUTRAS EQUIPES === */
+.mclaren {
+  background: linear-gradient(90deg, #e96209, #f87f1f);
+}
+
+.redbull {
+  background: linear-gradient(90deg, #1e1e6e, #3a46ff);
+}
+
+/* === INFORMAÇÕES === */
+.driver-card .info {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.driver-card .info h2 {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.driver-card .info h3 {
+  font-size: 20px;
+  margin: 4px 0;
+}
+
+.driver-card .info p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 2px 0 10px 0;
+}
+
+.driver-card .flag {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.driver-card .points {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* === IMAGEM DO PILOTO === */
+.driver-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.season-title{
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  background-color: #000000;
+  color: #f4f4f4;
+  margin-top: 50px;
+  width: 60%;
+  margin-left:20%;
+
+}
+
+/* === CARD BASE === */
+.team-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  color: white;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+/* === EQUIPES === */
+.mclaren {
+  background: linear-gradient(90deg, #e96209, #f87f1f);
+}
+
+.mercedes {
+  background: linear-gradient(90deg, #00a19b, #007c7c);
+}
+
+.redbull {
+  background: linear-gradient(90deg, #1e1e6e, #3a46ff);
+}
+
+/* === INFORMAÇÕES === */
+.team-card .info {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #f7f7f8;
+}
+
+.team-card .info h2 {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.team-card .info h3 {
+  font-size: 22px;
+  margin: 4px 0;
+}
+
+.team-card .info p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 4px 0 10px 0;
+  line-height: 1.4;
+}
+
+.team-card .points {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* === IMAGEM DO CARRO === */
+.team-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+#teamsTable {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(58, 51, 51, 0.1);
+}
+
+#teamsTable th, #teamsTable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+}
+
+#teamsTable thead {
+  background: #1d1919;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#teamsTable tr:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+#teamsTable tr.first {
+  background: linear-gradient(90deg, rgb(14, 13, 13), #2c2c2b);
+  color: #ebe9e9;
+  font-weight: bold;
+}
+
+#teamsTable tr.second {
+  background: linear-gradient(90deg, rgb(14, 13, 13), #2c2c2b);
+  color: #ece7e7;
+  font-weight: bold;
+}
+
+#teamsTable tr.third {
+   background: linear-gradient(90deg, rgb(14, 13, 13), #2c2c2b);
+  color: #e7dbdb;
+  font-weight: bold;
+}
+
+.show-table {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#toggleTable {
+  background: #e10600;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#toggleTable:hover {
+  background: #b30500;
+  transform: scale(1.05);
+}
+
+#driversTable {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+#driversTable th, #driversTable td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+}
+
+#driversTable thead {
+  background: #0f0f0f;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#driversTable tr:hover {
+  background: rgba(221, 215, 215, 0.1);
+}
+
+/* 🥇 Top 3 destaque */
+#driversTable tr.first {
+  background: linear-gradient(90deg, rgb(26, 25, 25), #141414);
+  color: #eee9e9;
+  font-weight: bold;
+}
+
+#driversTable tr.second {
+ background: linear-gradient(90deg, rgb(26, 25, 25), #161616);
+  color: #e2dddd;
+  font-weight: bold;
+}
+
+#driversTable tr.third {
+ background: linear-gradient(90deg, rgb(26, 25, 25), #0f0f0f);
+  color: #d4cdcd;
+  font-weight: bold;
+}
+
+/* Botão de toggle */
+#toggleDrivers {
+  background: #e10600;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#toggleDrivers:hover {
+  background: #b30500;
+  transform: scale(1.05);
+}
+
+#driversTable .extra {
+  transition: all 0.3s ease;
+}
+
+#driversTable .extra:nth-child(even) {
+  background: rgba(255,255,255,0.05);
+}
+
+
+
+
+
+
+
